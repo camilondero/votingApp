@@ -19,8 +19,8 @@ services:
       - back-tier
 
   worker:
-      image: 01032000/voting-app_worker:latest
-      dockerfile: Dockerfile.j
+    image: 01032000/voting-app_worker:latest
+    dockerfile: Dockerfile.j
     networks:
       - back-tier
 
