@@ -11,9 +11,9 @@ services:
 
   result:
     image:  01032000/voting-app_result:latest
-    command: nodemon server.js
-    volumes:
-      - ./result:/app
+    ports:
+      - "5001:80"
+      - "5858:5858"
     networks:
       - front-tier
       - back-tier
