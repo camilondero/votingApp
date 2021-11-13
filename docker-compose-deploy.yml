@@ -19,8 +19,7 @@ services:
       - back-tier
 
   worker:
-    build:
-      context: 01032000/voting-app_worker:latest
+      image: 01032000/voting-app_worker:latest
       dockerfile: Dockerfile.j
     networks:
       - back-tier
