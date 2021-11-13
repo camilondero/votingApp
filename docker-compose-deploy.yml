@@ -3,7 +3,6 @@ version: "3.4"
 services:
   vote:
     image: 01032000/voting-app_vote:latest
-    command: python app.py
     volumes:
      - ./vote:/app
     networks:
