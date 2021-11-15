@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.9"
 
 services:
   vote:
@@ -23,7 +23,7 @@ services:
 
   worker:
     build:
-      context: 01032000/voting-app_worker:latest
+    image: 01032000/voting-app_worker:latest
     networks:
       - back-tier
 
