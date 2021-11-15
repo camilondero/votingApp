@@ -10,14 +10,10 @@ services:
       - back-tier
 
   result:
-<<<<<<< HEAD
     image: 01032000/voting-app_result:latest
     command: nodemon server.js
     volumes:
       - ./result:/app
-=======
-    image:  01032000/voting-app_result:latest
->>>>>>> a9e5a5822fe8e0b067d1028165f2beb6914a72bf
     ports:
       - "5001:80"
       - "5858:5858"
@@ -26,13 +22,9 @@ services:
       - back-tier
 
   worker:
-<<<<<<< HEAD
     build:
       context: 01032000/voting-app_worker:latest
       dockerfile: Dockerfile.j
-=======
-    image: 01032000/voting-app_worker:latest
->>>>>>> a9e5a5822fe8e0b067d1028165f2beb6914a72bf
     networks:
       - back-tier
 
