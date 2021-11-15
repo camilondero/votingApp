@@ -2,7 +2,7 @@ version: "3"
 
 services:
   vote:
-    image: 01032000/voting-app_vote:${BUILD_NUMBER}
+    image: 01032000/voting-app_vote:latest
     ports:
       - "5000:80"
     networks:
@@ -10,7 +10,7 @@ services:
       - back-tier
 
   result:
-    image: 01032000/voting-app_result:${BUILD_NUMBER}
+    image: 01032000/voting-app_result:latest
     command: nodemon server.js
     volumes:
       - ./result:/app
@@ -22,7 +22,7 @@ services:
       - back-tier
 
   worker:
-    image: 01032000/voting-app_worker:${BUILD_NUMBER}
+    image: 01032000/voting-app_worker:latest
     networks:
       - back-tier
 
