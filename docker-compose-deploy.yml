@@ -22,7 +22,8 @@ services:
       - back-tier
 
   worker:
-    context: 01032000/voting-app_worker:latest
+    build:
+      context: 01032000/voting-app_worker:latest
     networks:
       - back-tier
 
