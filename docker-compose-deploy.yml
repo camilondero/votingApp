@@ -22,7 +22,6 @@ services:
       - back-tier
 
   worker:
-    build:
     image: 01032000/voting-app_worker:latest
     networks:
       - back-tier
