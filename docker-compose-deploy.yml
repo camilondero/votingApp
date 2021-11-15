@@ -22,9 +22,7 @@ services:
       - back-tier
 
   worker:
-    build:
-      context: 01032000/voting-app_worker:latest
-      dockerfile: Dockerfile.j
+    context: 01032000/voting-app_worker:latest
     networks:
       - back-tier
 
