@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   vote:
-    image: 01032000/voting-app_vote:latest
+    image: 01032000/voting-app_vote:v1.0.%BUILD_NUMBER%
     ports:
       - "5000:80"
     networks:
