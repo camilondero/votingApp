@@ -1,6 +1,6 @@
 Example Voting App
 =========
-//prueba
+//prueba2
 
 A simple distributed application running across multiple Docker containers.
 
